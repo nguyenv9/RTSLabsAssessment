@@ -7,14 +7,7 @@ import java.lang.*;
 import java.io.*;
 
 public class RTSLabMethods
-{
-   public static void main(String [] args)
-   {
-      int[] input = {1,5,2,1,10,6,-4,-10};
-      System.out.println(aboveBelow(input, 6));
-      System.out.println(stringRotation("Hello ", 1));
-   }
-   
+{  
    /******************************************************************************************
    * METHOD: aboveBelow
    * PURPOSE: Takes in an array of integers and an int value to compare the array values to.
