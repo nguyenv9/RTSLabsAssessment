@@ -26,19 +26,19 @@ public class RTSLabMethods
       {
          return counter;
       }
-      for(int i = 0; i < listOfInts.length; i++) // iterating counter and update hashmap 
+      for(int i = 0; i < listOfInts.length; i++) // iterating counter 
       {
          if(listOfInts[i] > value)
          {
-            aboveCount++;
-            counter.put("above", aboveCount);
+            aboveCount++;            
          }
          else if(listOfInts[i] < value)
          {
-            belowCount++;
-            counter.put("below", belowCount);
+            belowCount++;            
          }
       }
+      counter.put("above", aboveCount); // updating the hashmap 
+      counter.put("below", belowCount);
       return counter; // return result hashmap
    }
    
